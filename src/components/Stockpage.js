@@ -1,5 +1,6 @@
 import React from "react";
 import spotify from '../images/Spotifylogo.png'
+import Stockchart from "./Stockchart";
 
 function Stockpage() {
     return (
@@ -18,7 +19,7 @@ function Stockpage() {
                 </div>
             </div>
             <div className="graph">
-                graph
+                <Stockchart/>
             </div>
             <div className="stockpage--data">
                 <h1>$130.00</h1>

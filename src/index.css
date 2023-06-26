@@ -147,4 +147,9 @@ body {
     font-weight: 600;
     color: #a9a9a9;
   }
+
+  .chart--tooltip p {
+    color: #fff;
+    font-weight: 700;
+  }
 }
