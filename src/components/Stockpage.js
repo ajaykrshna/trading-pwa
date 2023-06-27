@@ -1,36 +1,53 @@
 import React from "react";
-import spotify from '../images/Spotifylogo.png'
 import Stockchart from "./Stockchart";
 
 function Stockpage() {
     return (
-        <div className="stockpage">
+        <>
             <div className="navbar">
-                navbar
-            </div>
-            <div className="stockpage--head">
-                <div className="stockpage--head--wrap--logo">
-                    <img src={spotify} />
-                    <h2>Spotify</h2>
-                </div>
-                <div className="stockpage--head--wrap--price">
-                    <p className="stockpage--head--la">Last close</p>
-                    <p className="stockpage--head--price">$150.00</p>
+                <ion-icon name="arrow-back-outline" id='arrow-back-outline'></ion-icon>
+                <div className="navbar--iconwrap">
+                    <ion-icon name="paper-plane-outline" id='paper-plane-outline'></ion-icon>
+                    <ion-icon name="heart-outline"></ion-icon>
                 </div>
             </div>
-            <div className="graph">
-                <Stockchart/>
-            </div>
-            <div className="stockpage--data">
-                <h1>$130.00</h1>
-                <div className="stockpage--data--wrap">
-                    <p className="stockpage--data--d">$5.96</p>
-                    <p className="stockpage--data--d">(2.16%)</p>
-                    <p className="stockpage--data--l">Last close</p>
+            <div className="stockpage">
+                <Stockchart />
+                <div className="stockpage--data">
+                    <h1>$130.00</h1>
+                    <div className="stockpage--data--wrap">
+                        <p className="stockpage--data--d">$5.96</p>
+                        <p className="stockpage--data--d">(2.16%)</p>
+                        <p className="stockpage--data--l">Last close</p>
+                    </div>
                 </div>
+                <div className="stockpage--data">
+                    <h1>$130.00</h1>
+                    <div className="stockpage--data--wrap">
+                        <p className="stockpage--data--d">$5.96</p>
+                        <p className="stockpage--data--d">(2.16%)</p>
+                        <p className="stockpage--data--l">Last close</p>
+                    </div>
+                </div>
+                <div className="stockpage--data">
+                    <h1>$130.00</h1>
+                    <div className="stockpage--data--wrap">
+                        <p className="stockpage--data--d">$5.96</p>
+                        <p className="stockpage--data--d">(2.16%)</p>
+                        <p className="stockpage--data--l">Last close</p>
+                    </div>
+                </div>
+                {buysell}
             </div>
-        </div>
+        </>
     );
 }
+
+const buysell = (
+    <div className="stockchart--buysell">
+        <button className="stockchart--sell">Sell</button>
+        <button className="stockchart--buy">Buy</button>
+    </div>
+)
 
 export default Stockpage;

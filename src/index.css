@@ -12,12 +12,42 @@ body {
 @media screen and (max-device-width: 800px) {
   .App {
     /* give padding to all */
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
   }
 
   .navbar {
     height: 50px;
-    padding: 10px;
-    background-color: red;
+    /* padding: 10px 20px; */
+    padding-top: 15px;
+    background-color: #212121;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100vw;
+  }
+
+  ion-icon {
+    font-size: 1.7rem;
+    color: #fff;
+  }
+
+  #arrow-back-outline {
+    margin-left: 20px;
+  }
+
+  #paper-plane-outline {
+    font-size: 1.5rem;
+  }
+
+  .navbar--iconwrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
   }
 
   .stocks {
@@ -67,7 +97,9 @@ body {
 
   .stockpage {
     display: flex;
+    margin-top: 63px;
     flex-direction: column;
+    height: 70vh;
   }
 
   .stockpage--head {
@@ -108,7 +140,8 @@ body {
   }
 
   .graph {
-    height: 40vh;
+    height: 75%;
+    margin-bottom: -0px;
     background-color: #212121;
   }
 
@@ -149,7 +182,72 @@ body {
   }
 
   .chart--tooltip p {
+    margin: 0;
     color: #fff;
     font-weight: 700;
+  }
+
+  .chart--tooltip h4 {
+    margin: 0;
+    color: #E7FAF4;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .stockchart--datatime {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px 15px;
+    position: relative;
+    bottom: 15%;
+    width: 90vw;
+  }
+
+  .stockchart--datatime p {
+    margin: 0;
+    padding: 6px 8px;
+    background-color: #1ed760;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 10px;
+  }
+
+  .stockchart--buysell {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    gap: 30px;
+    background: #fff;
+    border-top: 1px solid #ededed;
+  }
+
+  .stockchart--buy {
+    width: 40%;
+    border-radius: 20px;
+    border: none;
+    background-color: #12d18e;
+    color: #fff;
+    font-weight: 550;
+    font-size: 0.9rem;
+    letter-spacing: 0.0125rem;
+    box-shadow: 4px 8px 24px 0px rgba(18, 209, 142, 0.25);
+  }
+
+  .stockchart--sell {
+    width: 40%;
+    border-radius: 20px;
+    border: none;
+    background-color: #E7FAF4;
+    color: #12d18e;
+    font-weight: 550;
+    line-height: 140%;
+    font-size: 0.9rem;
+    letter-spacing: 0.0125rem;
   }
 }
