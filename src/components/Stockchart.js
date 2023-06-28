@@ -6,6 +6,9 @@ import spotify from '../images/Spotifylogo.png'
 
 const data = [];
 
+const red = '#eb5168'
+const green = "#1ED760"
+
 for (let num = 30; num >= 0; num--) {
     data.push({
         date: subDays(new Date(), num).toISOString().substring(0, 10),
@@ -31,12 +34,16 @@ function Stockchart() {
             <ResponsiveContainer width='100%' height='70%'>
                 <AreaChart data={data}>
                     <defs>
-                        <linearGradient id="color" x1="0" y1="0" x2="0" y2="1">
+                        <linearGradient id="colorgreen" x1="0" y1="0" x2="0" y2="1">
                             <stop offset="0%" stopColor="#1ED760" stopOpacity={0.4} />
                             <stop offset="75%" stopColor="#1ED760" stopOpacity={0.05} />
                         </linearGradient>
+                        <linearGradient id="colorred" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stopColor="#eb5168" stopOpacity={0.4} />
+                            <stop offset="75%" stopColor="#eb5168" stopOpacity={0.05} />
+                        </linearGradient>
                     </defs>
-                    <Area type={curveCardinal} dataKey='value' stroke="#1ED760" strokeWidth={2.5} fill="url(#color)" />
+                    <Area type={curveCardinal} dataKey='value' stroke='#e51837' strokeWidth={2.5} fill="url(#colorred)" />
                     <XAxis
                         dataKey='date'
                         axisLine={false}
