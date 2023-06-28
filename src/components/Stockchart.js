@@ -16,8 +16,6 @@ for (let num = 30; num >= 0; num--) {
     })
 }
 
-console.log(data);
-
 function Stockchart() {
     return (
         <div className="graph">

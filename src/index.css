@@ -16,6 +16,9 @@ body {
     margin: 0;
     overflow-x: hidden;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .navbar {
@@ -52,6 +55,7 @@ body {
   }
 
   .stocks {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -71,8 +75,9 @@ body {
     /* box-shadow: 0 0px 3px 0.2px rgba(0, 0, 0, 0.25); */
   }
 
-  .stockcard img {
+  .stockcard--graph {
     height: 70px;
+    min-width: 130px;
   }
 
   .stockcard--wrap {
@@ -250,5 +255,27 @@ body {
     line-height: 140%;
     font-size: 0.9rem;
     letter-spacing: 0.0125rem;
+  }
+
+  .bottomnavbar {
+    /*  height: 60px; */
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #fff;
+    bottom: 0;
+  }
+
+  #bottomnavbaricons {
+    color: #9e9e9e;
+  }
+
+  #bottomnavbariconshome {
+    color: #9e9e9e;
+    fill: #1ed760;
+    margin: 0 20px;
   }
 }
