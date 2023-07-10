@@ -1,11 +1,14 @@
 import React from "react";
 import Stockchart from "./Stockchart";
+import { Link } from "react-router-dom";
 
 function Stockpage() {
     return (
         <>
             <div className="navbar">
-                <ion-icon name="arrow-back-outline" id='arrow-back-outline'></ion-icon>
+                <Link to='/'>
+                    <ion-icon name="arrow-back-outline" id='arrow-back-outline'></ion-icon>
+                </Link>
                 <div className="navbar--iconwrap">
                     <ion-icon name="paper-plane-outline" id='paper-plane-outline'></ion-icon>
                     <ion-icon name="heart-outline"></ion-icon>

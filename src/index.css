@@ -382,7 +382,68 @@ body {
     font-weight: 800;
     margin-top: 10px;
   }
+
   .discover--search--results {
     width: 100%;
+  }
+
+  .accounts {
+    padding: 20px;
+  }
+
+  .accounts--head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .accounts--head h3 {
+    font-size: 1.5rem;
+  }
+
+  .accounts--head--wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  #person--icon {
+    color: #1ed760;
+  }
+
+  .accounts--info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .accounts--info--wrap {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .accounts--info img {
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .accounts--info--name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accounts--info--name h3 {
+    margin: 0;
+    margin-bottom: 7px;
+  }
+
+  .accounts--info--name p {
+    margin: 0;
+    letter-spacing: 0.05rem;
+  }
+
+  #pencil--icon {
+    color: #1ed760;
   }
 }
