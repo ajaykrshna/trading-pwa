@@ -1,6 +1,6 @@
 import React from "react";
 import Stockcard from "./Stockcard";
-
+import Navbar from "./Navbar";
 
 function Stocks() {
   return (
@@ -14,6 +14,7 @@ function Stocks() {
       <Stockcard />
       <Stockcard />
       <Stockcard />
+      <Navbar/>
     </div>
   );
 }

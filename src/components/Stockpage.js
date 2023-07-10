@@ -37,8 +37,8 @@ function Stockpage() {
                         <p className="stockpage--data--l">Last close</p>
                     </div>
                 </div>
-                {buysell}
             </div>
+            {buysell}
         </>
     );
 }
