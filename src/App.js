@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Stocks from './components/Stocks'
+import HomePStockList from './components/HomePStockList'
 import Stockpage from "./components/Stockpage";
 import Navbar from "./components/Navbar";
 import Discover from "./components/Discover";
@@ -33,7 +33,7 @@ function App() {
         <div className="App">
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<Stocks />} />
+              <Route path="/" element={<HomePStockList />} />
               <Route path="/spotify" element={<Stockpage />} />
               <Route path="/discover" element={<Discover />} />
               <Route path="/account" element={<Accounts />} />

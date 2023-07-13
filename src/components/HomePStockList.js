@@ -3,7 +3,7 @@ import Stockcard from "./Stockcard";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 
-function Stocks() {
+function HomePStockList() {
   return (
     <div className="stocks">
       <h1 className="stocks--mainh1">Stocks</h1>
@@ -22,4 +22,4 @@ function Stocks() {
 
 
 
-export default Stocks;
+export default HomePStockList;
