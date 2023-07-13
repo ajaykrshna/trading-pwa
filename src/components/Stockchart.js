@@ -1,22 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { ResponsiveContainer, AreaChart, XAxis, YAxis, Area, Tooltip, CartesianGrid } from "recharts";
-import { format, parseISO, subDays } from "date-fns";
 import { curveCardinal } from "d3-shape";
 import spotify from '../images/Spotifylogo.png'
 
-const data = [];
+import dataITC1D from '../Data/ITCD'
+import dataITC1W from '../Data/ITCW'
+import dataITC1M from '../Data/ITCM'
+import dataITC6M from '../Data/ITC6M'
+import dataITC1Y from '../Data/ITCY'
+import dataITC5Y from '../Data/ITC5Y'
+
+import dayjs from "dayjs";
+import localizedFormat from 'dayjs/plugin/localizedFormat'
+dayjs.extend(localizedFormat)
+
 
 const red = '#eb5168'
 const green = "#1ED760"
 
-for (let num = 30; num >= 0; num--) {
-    data.push({
-        date: subDays(new Date(), num).toISOString().substring(0, 10),
-        value: 1 + Math.random()
-    })
-}
+const data = [];
+dataITC1D.chart.result[0].indicators.quote[0].close.forEach((val, index) => {
+    const timestamp = dataITC1D.chart.result[0].timestamp[index];
+    const convtime = new Date(timestamp * 1000)
+    if (val) {
+        data.push({
+            date: dayjs(convtime).format('LL'),
+            value: val
+        })
+    }
+});
 
 function Stockchart() {
+
+    const [timeline, setTimeline] = useState('1D')
     return (
         <div className="graph">
             <div className="stockpage--head">
@@ -48,11 +64,7 @@ function Stockchart() {
                         tickLine={false}
                         hide={true}
                         tickFormatter={str => {
-                            const date = parseISO(str);
-                            if (date.getDate() % 7 === 0) {
-                                return format(date, "MMM, d");
-                            }
-                            return "";
+
                         }}
                     />
                     <YAxis
@@ -62,14 +74,21 @@ function Stockchart() {
                         tickLine={false}
                         tickCount={8}
                         type="number"
-                        /* domain={["auto", "auto"]} */
+                        domain={['dataMin-10', "dataMax"]}
                         tickFormatter={(number) => `$${number.toFixed(2)}`}
                     />
                     <Tooltip content={<Customtooltip />} cursor={false} />
                     {/* <CartesianGrid opacity={0.1} vertical={false} /> */}
                 </AreaChart>
             </ResponsiveContainer>
-            {datatime}
+            <div className="stockchart--datatime">
+                <p className={timeline === '1D' ? 'timeactive' : 'timepending'} onClick={() => setTimeline('1D')}>1D</p>
+                <p className={timeline === '1W' ? 'timeactive' : 'timepending'} onClick={() => setTimeline('1W')}>1W</p>
+                <p className={timeline === '1M' ? 'timeactive' : 'timepending'} onClick={() => setTimeline('1M')}>1M</p>
+                <p className={timeline === '3M' ? 'timeactive' : 'timepending'} onClick={() => setTimeline('3M')}>3M</p>
+                <p className={timeline === '1Y' ? 'timeactive' : 'timepending'} onClick={() => setTimeline('1Y')}>1Y</p>
+                <p className={timeline === '5Y' ? 'timeactive' : 'timepending'} onClick={() => setTimeline('5Y')}>5Y</p>
+            </div>
         </div>
     );
 }
@@ -78,25 +97,12 @@ function Customtooltip({ active, payload, label }) {
     if (active) {
         return (
             <div className="chart--tooltip">
-                <h4>{format(parseISO(label), "eee, d MMM")}</h4>
+                <h4>{label}</h4>
                 <p> {payload[0].value.toFixed(2)} INR</p>
             </div>
         )
     }
     return null;
 }
-
-const datatime = (
-    <div className="stockchart--datatime">
-        <p>1D</p>
-        <p>1W</p>
-        <p>1M</p>
-        <p>3M</p>
-        <p>1Y</p>
-        <p>5Y</p>
-    </div>
-)
-
-
 
 export default Stockchart;

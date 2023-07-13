@@ -27,9 +27,10 @@ function App() {
       window.removeEventListener('resize', handleWindowResize);
     };
   }, []);
+  
   return (
     <>
-      {(windowSize[0] > 800) ? <DesktopPage />  :
+      {(windowSize[0] > 800) ? <DesktopPage /> :
         <div className="App">
           <BrowserRouter>
             <Routes>
@@ -37,7 +38,7 @@ function App() {
               <Route path="/spotify" element={<Stockpage />} />
               <Route path="/discover" element={<Discover />} />
               <Route path="/account" element={<Accounts />} />
-              <Route path="/test" element={<Yahoodataid />} />
+              <Route path="/test" element={<Yahoodataid/>} />
             </Routes>
           </BrowserRouter>
         </div>}

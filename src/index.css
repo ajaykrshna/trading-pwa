@@ -255,11 +255,11 @@ body {
     text-align: center;
     margin: 20px 15px;
     position: relative;
-    bottom: 15%;
+    bottom: 10%;
     width: 90vw;
   }
 
-  .stockchart--datatime p {
+  /* .stockchart--datatime p {
     margin: 0;
     padding: 6px 8px;
     background-color: #1ed760;
@@ -267,6 +267,28 @@ body {
     font-size: 0.85rem;
     font-weight: 500;
     border-radius: 10px;
+  } */
+
+  .timeactive {
+    margin: 0;
+    padding: 6px 8px;
+    background-color: #1ed760;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 1s;
+  }
+
+  .timepending {
+    margin: 0;
+    padding: 6px 8px;
+    color: #1ed760;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 1s;
+
   }
 
   .stockchart--buysell {
