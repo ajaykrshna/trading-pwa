@@ -13,6 +13,49 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media screen and (min-device-width: 800px) {
+  .desktoppage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #212121;
+    color: #edf9f2;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  @keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+  .desktoppage h1, h2 {
+    font-size: 3rem;
+    background: linear-gradient(
+    to right,
+    #7953cd 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #764ada 80%
+  );
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+  /* text-fill-color: transparent; */
+  background-size: 500% auto;
+  animation: gradientAnimation 5s ease-in-out infinite alternate;
+  content: "checkout https://codepen.io/amit_merchant/pen/yLxgMGz";
+  }
+
+  .desktoppage h2 {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (max-device-width: 800px) {
   .App {
     /* give padding to all */
@@ -445,5 +488,10 @@ body {
 
   #pencil--icon {
     color: #1ed760;
+  }
+
+  .links {
+    text-decoration: none;
+    color: #000;
   }
 }
