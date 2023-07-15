@@ -99,6 +99,7 @@ const data = {
     dataITC5Y: dataITC5YC
 }
 
+
 function Stockchart() {
     const [timeline, setTimeline] = useState('1D')
     const [objname, setObjname] = useState('dataITC1D')
@@ -126,7 +127,10 @@ function Stockchart() {
                             <stop offset="75%" stopColor="#eb5168" stopOpacity={0.05} />
                         </linearGradient>
                     </defs>
-                    <Area type={curveCardinal} dataKey='value' stroke='#e51837' strokeWidth={2.5} fill="url(#colorred)" />
+                    <Area type={curveCardinal} dataKey='value'
+                        stroke={data['dataITC' + timeline][0].value > data['dataITC' + timeline][('dataITC' + timeline).length - 1].value ? red : green}
+                        strokeWidth={2.5}
+                        fill={data['dataITC' + timeline][0].value > data['dataITC' + timeline][('dataITC' + timeline).length - 1].value ? "url(#colorred)" : "url(#colorgreen)"} />
                     <XAxis
                         dataKey='date'
                         axisLine={false}
@@ -163,7 +167,7 @@ function Stockchart() {
 }
 
 function Customtooltip({ active, payload, label }) {
-    if (active) {
+    if (active && payload && label) {
         return (
             <div className="chart--tooltip">
                 <h4>{label}</h4>
