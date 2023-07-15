@@ -4,7 +4,7 @@ import Stockpage from "./components/Stockpage";
 import Navbar from "./components/Navbar";
 import Discover from "./components/Discover";
 import Accounts from "./components/Accounts";
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Yahoodataid from "./components/Yahoodataid";
 import DesktopPage from "./components/DesktopPage";
 
@@ -32,7 +32,7 @@ function App() {
     <>
       {(windowSize[0] > 800) ? <DesktopPage /> :
         <div className="App">
-          <BrowserRouter>
+          <Router>
             <Routes>
               <Route path="/" element={<HomePStockList />} />
               <Route path="/spotify" element={<Stockpage />} />
@@ -40,7 +40,7 @@ function App() {
               <Route path="/account" element={<Accounts />} />
               <Route path="/test" element={<Yahoodataid/>} />
             </Routes>
-          </BrowserRouter>
+          </Router>
         </div>}
     </>
   );
