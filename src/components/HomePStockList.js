@@ -5,18 +5,20 @@ import { Link } from "react-router-dom";
 
 function HomePStockList() {
   return (
-    <div className="stocks">
-      <h1 className="stocks--mainh1">Stocks</h1>
-      <Link to='/spotify' className="links"><Stockcard /></Link>
-      <Link to='/spotify' className="links"><Stockcard /></Link>
-      <Link to='/spotify' className="links"><Stockcard /></Link>
-      <Link to='/spotify' className="links"><Stockcard /></Link>
-      <Link to='/spotify' className="links"><Stockcard /></Link>
-      <Link to='/spotify' className="links"><Stockcard /></Link>
-      <Link to='/spotify' className="links"><Stockcard /></Link>
-      <Link to='/spotify' className="links"><Stockcard /></Link>
-      <Navbar/>
-    </div>
+    <>
+      <div className="stocks">
+        <h1 className="stocks--mainh1">Stocks</h1>
+        <Link to='/spotify' className="links"><Stockcard /></Link>
+        <Link to='/spotify' className="links"><Stockcard /></Link>
+        <Link to='/spotify' className="links"><Stockcard /></Link>
+        <Link to='/spotify' className="links"><Stockcard /></Link>
+        <Link to='/spotify' className="links"><Stockcard /></Link>
+        <Link to='/spotify' className="links"><Stockcard /></Link>
+        <Link to='/spotify' className="links"><Stockcard /></Link>
+        <Link to='/spotify' className="links"><Stockcard /></Link>
+      </div>
+      <Navbar />
+    </>
   );
 }
 
