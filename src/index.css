@@ -26,29 +26,30 @@ body {
   }
 
   @keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
+    0% {
+      background-position: 0% 50%;
+    }
+
+    100% {
+      background-position: 100% 50%;
+    }
   }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-  .desktoppage h1, h2 {
+
+  .desktoppage h1,
+  h2 {
     font-size: 3rem;
-    background: linear-gradient(
-    to right,
-    #7953cd 20%,
-    #00affa 30%,
-    #0190cd 70%,
-    #764ada 80%
-  );
-  -webkit-background-clip: text;
-  background-clip:text;
-  -webkit-text-fill-color: transparent;
-  /* text-fill-color: transparent; */
-  background-size: 500% auto;
-  animation: gradientAnimation 5s ease-in-out infinite alternate;
-  content: "checkout https://codepen.io/amit_merchant/pen/yLxgMGz";
+    background: linear-gradient(to right,
+        #7953cd 20%,
+        #00affa 30%,
+        #0190cd 70%,
+        #764ada 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+    background-size: 500% auto;
+    animation: gradientAnimation 5s ease-in-out infinite alternate;
+    content: "checkout https://codepen.io/amit_merchant/pen/yLxgMGz";
   }
 
   .desktoppage h2 {
@@ -123,12 +124,12 @@ body {
     /* box-shadow: 0 0px 3px 0.2px rgba(0, 0, 0, 0.25); */
   }
 
-  .stockcarddisc h2{
+  .stockcarddisc h2 {
     margin: 0;
     font-size: 1rem;
   }
 
-  .stockcarddisc h3{
+  .stockcarddisc h3 {
     margin: 0;
     margin-top: 0.5rem;
     font-size: 1rem;
@@ -355,7 +356,7 @@ body {
   }
 
   .bottomnavbar {
-    /*  height: 60px; */
+    height: 4vh;
     width: 100%;
     padding-bottom: 30px;
     padding-top: 20px;
