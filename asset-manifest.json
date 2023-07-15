@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/trading-pwa/static/css/main.75b62473.css",
+    "main.js": "/trading-pwa/static/js/main.a1e37a69.js",
+    "static/js/787.fae29ec8.chunk.js": "/trading-pwa/static/js/787.fae29ec8.chunk.js",
+    "static/media/Spotifylogo.png": "/trading-pwa/static/media/Spotifylogo.aaf47d06a247b873d6fb.png",
+    "index.html": "/trading-pwa/index.html",
+    "main.75b62473.css.map": "/trading-pwa/static/css/main.75b62473.css.map",
+    "main.a1e37a69.js.map": "/trading-pwa/static/js/main.a1e37a69.js.map",
+    "787.fae29ec8.chunk.js.map": "/trading-pwa/static/js/787.fae29ec8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75b62473.css",
+    "static/js/main.a1e37a69.js"
+  ]
+}
