@@ -6,13 +6,14 @@ import axios from "axios";
 import Navbar from "./Navbar";
 dayjs.extend(localizedFormat)
 
+// https://clearbit.com/blog/logo
+
 const data = []
 axios.get('./Stockslist.json')
     .then(res => { data[0] = res.data })
     .catch(err => console.log(err))
 
 export default function Yahoodataid() {
-    console.log(data[0])
     return (
         <div>
             tst
