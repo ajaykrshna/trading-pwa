@@ -42,10 +42,14 @@ function App() {
           <Router>
             <Routes>
               <Route path="/" element={<HomePStockList />} />
+              <Route path="/signin" element={<Signin />} />
+              <Route path="/signup" element={<Email />} />
+              <Route path="/signupverification" element={<PinUp />} />
+              <Route path="/signinverification" element={<PinIn />} />
               <Route path="/spotify" element={<Stockpage />} />
               <Route path="/discover" element={<Discover />} />
               <Route path="/account" element={<Accounts />} />
-              <Route path="/test" element={<PinIn />} />
+              <Route path="/test" element={<Welcomepage />} />
             </Routes>
           </Router>
         </div>}

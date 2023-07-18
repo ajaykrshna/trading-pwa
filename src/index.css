@@ -673,7 +673,7 @@ body {
     margin-top: 15px;
     border: none;
     outline: none;
-    border-bottom: 1.2px solid #000;
+    border-bottom: 2px solid #000;
     font-size: 1.25rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -681,7 +681,7 @@ body {
   }
 
   .signup--form input:focus {
-    border-bottom: 1.2px solid #12d18e;
+    border-bottom: 2px solid #12d18e;
   }
 
   .signup--button button {
@@ -817,5 +817,11 @@ body {
 
   .signin--qu {
     margin-top: 10px;
+  }
+
+  .signin--email--warning {
+    color: #eb5168;
+    font-size: 0.9rem;
+    margin-top: 3px;
   }
 }
