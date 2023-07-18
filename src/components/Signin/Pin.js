@@ -1,13 +1,14 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 export default function Pin() {
+    const navigate = useNavigate()
     return (
         <div className="signup">
             <div className="signup--wrap">
                 <div className="signup--progress">
-                    <Link to='/'>
+                    <div onClick={() => navigate(-1)}>
                         <ion-icon name="arrow-back-outline" id='arrow-back-outline-signup'></ion-icon>
-                    </Link>
+                    </div>
                 </div>
                 <div className="signup--question">
                     You got a mail!
@@ -48,6 +49,6 @@ export default function Pin() {
             <div className="signup--button">
                 <button>Confirm</button>
             </div>
-        </div>
+        </div >
     )
 }
