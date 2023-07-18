@@ -546,4 +546,74 @@ body {
     text-decoration: none;
     color: #000;
   }
+
+
+
+  /* Welcome page */
+  .welcomepage {
+    padding: 4vh 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 92vh;
+  }
+
+  .welcomepage--wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .welcomepage--text {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .welcomepage--text--head {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 800;
+    color: #12d18e;
+  }
+
+  .welcomepage--buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+  }
+
+  .welcomepage--google {
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: #fff;
+    border: 1px solid #bdbbbe;
+  }
+
+  .welcomepage--signup {
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: #12d18e;
+    color: #fff;
+  }
+
+  .welcomepage--signin {
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: #e7faf4;
+    color: #12d18e;
+  }
 }
