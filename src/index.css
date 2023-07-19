@@ -616,7 +616,7 @@ body {
   }
 
   .discover--card img {
-    width: 70px;
+    width: 16vw;
     border: 3px solid #1ed760;
     border-radius: 50%;
   }

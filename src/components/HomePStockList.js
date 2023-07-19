@@ -13,7 +13,9 @@ function HomePStockList() {
           <div className="homepage--head--head">
             <h2>Trade!</h2>
             <div className="homepage--head--head--wrap">
-              <ion-icon name="heart-outline" id='heart-outline'></ion-icon>
+              <div onClick={() => navigate('/wishlist')}>
+                <ion-icon name="heart-outline" id='heart-outline'></ion-icon>
+              </div>
               <div onClick={() => navigate('/notifications')}>
                 <ion-icon name="notifications-outline" id='notifications-outline'></ion-icon>
               </div>

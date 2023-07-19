@@ -16,6 +16,7 @@ import Signin from "./components/Signin/Signin";
 import Notification from "./components/Notification";
 import Wishlist from "./components/Wishlist";
 import Mystocks from "./components/Mystocks";
+import Buy from "./components/Buy";
 
 function App() {
 
@@ -68,6 +69,7 @@ function App() {
               <Route path="/notifications" element={<Notification />} />
               <Route path="/wishlist" element={<Wishlist />} />
               <Route path="/mystocks" element={<Mystocks />} />
+              <Route path="/buy" element={<Buy />} />
             </Routes>
           </Router>
         </div>}

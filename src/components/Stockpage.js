@@ -42,16 +42,19 @@ function Stockpage() {
                     </div>
                 </div>
             </div>
-            {buysell}
+            <Buysell />
         </>
     );
 }
 
-const buysell = (
-    <div className="stockchart--buysell">
-        <button className="stockchart--sell">Sell</button>
-        <button className="stockchart--buy">Buy</button>
-    </div>
-)
+const Buysell = () => {
+    const navigate = useNavigate()
+    return (
+        <div className="stockchart--buysell">
+            <button className="stockchart--sell">Sell</button>
+            <button className="stockchart--buy" onClick={() => navigate('/buy')}>Buy</button>
+        </div>
+    )
+}
 
 export default Stockpage;
