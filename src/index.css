@@ -650,6 +650,7 @@ body {
 
   #arrow-back-outline-signup {
     color: #000;
+    font-size: 1.5rem;
   }
 
   .signup--question {
@@ -829,4 +830,45 @@ body {
     margin-top: 3px;
     margin-bottom: -10px;
   }
+
+  /* Notifications page */
+
+  .notification {
+    flex-grow: 1;
+    padding: 2vh 4vw;
+  }
+
+  .notification--head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .notification--head--wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .notification--head--wrap h2 {
+    margin-left: 10px;
+    font-size: 1.4rem;
+  }
+
+  #settings-outline {
+    color: #000;
+    font-size: 1.5rem;
+  }
+
+  .notification--nots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+  }
+
+  .notification--nots p {
+    margin: 0;
+  }
+
 }
