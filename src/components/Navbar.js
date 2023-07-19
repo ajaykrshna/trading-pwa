@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
     return (
         <div className="bottomnavbar">
-            <NavLink to='/' className={({ isActive, isPending }) =>
+            <NavLink to='/stocks' className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "navlinks" : "pending"
             }>
                 <ion-icon name="home" id='bottomnavbaricons'></ion-icon>
