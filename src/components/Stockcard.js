@@ -7,10 +7,13 @@ import { curveCardinal } from "d3-shape";
 function Stockcard() {
     return (
         <div className="stockcard">
-            <h2>Spotify</h2>
+            <div className="stockcard--head--wrap">
+                <h2>Spotify</h2>
+                <h3>SPOT</h3>
+            </div>
             <div className="stockcard--wrap">
                 <div className="stockcard--graph">
-                    {chart}
+                    {Chart}
                 </div>
                 <div className="stockcard--price">
                     <p className="stockcard--price--main">$150.00</p>
@@ -30,8 +33,8 @@ for (let num = 30; num >= 0; num--) {
     })
 }
 
-const chart = (
-    <ResponsiveContainer width='100%' height='100%'>
+export const Chart = (
+    <ResponsiveContainer width='100%' height='100%' >
         <AreaChart data={data}>
             <defs>
                 <linearGradient id="colorgreen" x1="0" y1="0" x2="0" y2="1">
