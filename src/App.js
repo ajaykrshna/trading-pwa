@@ -14,6 +14,7 @@ import PinIn from "./components/Signin/Pin";
 import Success from "./components/Signup/Success";
 import Signin from "./components/Signin/Signin";
 import Notification from "./components/Notification";
+import Wishlist from "./components/Wishlist";
 
 function App() {
 
@@ -63,8 +64,8 @@ function App() {
               <Route path="/test" element={<Yahoodataid />} />
 
               {/* General */}
-
               <Route path="/notifications" element={<Notification />} />
+              <Route path="/wishlist" element={<Wishlist />} />
             </Routes>
           </Router>
         </div>}
