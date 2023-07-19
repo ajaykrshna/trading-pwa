@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import HomePStockList from './components/HomePStockList'
 import Stockpage from "./components/Stockpage";
-import Navbar from "./components/Navbar";
 import Discover from "./components/Discover";
 import Accounts from "./components/Accounts";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
@@ -41,15 +40,19 @@ function App() {
         <div className="App">
           <Router>
             <Routes>
-              <Route path="/" element={<HomePStockList />} />
-              <Route path="/signin" element={<Signin />} />
+              <Route path="/" element={<Welcomepage />} />
+              {/* Signup paths */}
               <Route path="/signup" element={<Email />} />
-              <Route path="/signupverification" element={<PinUp />} />
+              <Route path="/signupVerification" element={<PinUp />} />
+              <Route path="/signupSuccess" element={<Success />} />
+              <Route path="/signupDetails" element={<Name />} />
+              <Route path="/stocks" element={<HomePStockList />} />
+              <Route path="/signin" element={<Signin />} />
               <Route path="/signinverification" element={<PinIn />} />
               <Route path="/spotify" element={<Stockpage />} />
               <Route path="/discover" element={<Discover />} />
               <Route path="/account" element={<Accounts />} />
-              <Route path="/test" element={<Welcomepage />} />
+              <Route path="/test" element={<Yahoodataid />} />
             </Routes>
           </Router>
         </div>}

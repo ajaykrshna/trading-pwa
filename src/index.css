@@ -749,6 +749,10 @@ body {
     align-items: center; */
   }
 
+  .signup--resend--b p{
+    margin: 0;
+  }
+
   .signup--resend--b span {
     font-weight: 600;
     color: #12d18e;
@@ -823,5 +827,6 @@ body {
     color: #eb5168;
     font-size: 0.9rem;
     margin-top: 3px;
+    margin-bottom: -10px;
   }
 }

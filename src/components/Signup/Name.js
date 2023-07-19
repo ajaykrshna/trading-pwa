@@ -1,13 +1,17 @@
-import { Link } from "react-router-dom"
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export default function Name() {
+    const navigate = useNavigate()
+    const [name, setName] = useState("")
+    const [warning, setWarning] = useState(null)
     return (
         <div className="signup">
             <div className="signup--wrap">
                 <div className="signup--progress">
-                    <Link to='/'>
+                    <div onClick={() => navigate(-1)}>
                         <ion-icon name="arrow-back-outline" id='arrow-back-outline-signup'></ion-icon>
-                    </Link>
+                    </div>
                     <p>Progress</p>
                 </div>
                 <div className="signup--question">
@@ -21,12 +25,30 @@ export default function Name() {
                         type="text"
                         id="signup--input"
                         placeholder="Full name"
+                        name="name"
+                        value={name}
+                        onChange={e => {
+                            setName(e.target.value)
+                            setWarning(null)
+                        }}
+                        style={name ? name.length > 0 ?
+                            { borderBottomColor: "#12d18e" } :
+                            { borderBottomColor: '#eb5168' } :
+                            { borderBottomColor: '#000' }}
                     />
+                    {warning}
                 </div>
             </div>
             <div className="signup--button">
-                <button>Confirm</button>
+                <button onClick={() => {
+                    name ? navigate('/signupSuccess') :
+                        setWarning(warningMessage)
+                }}>Confirm</button>
             </div>
         </div>
     )
 }
+
+const warningMessage = (
+    <p className="signin--email--warning">Please enter your name</p>
+)
