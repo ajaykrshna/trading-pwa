@@ -1,14 +1,15 @@
 import React from "react";
 import Stockchart from "./Stockchart";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Stockpage() {
+    const navigate = useNavigate()
     return (
         <>
             <div className="navbar">
-                <Link to='/'>
+                <div onClick={() => navigate(-1)}>
                     <ion-icon name="arrow-back-outline" id='arrow-back-outline'></ion-icon>
-                </Link>
+                </div>
                 <div className="navbar--iconwrap">
                     <ion-icon name="paper-plane-outline" id='paper-plane-outline'></ion-icon>
                     <ion-icon name="heart-outline"></ion-icon>

@@ -40,19 +40,27 @@ function App() {
         <div className="App">
           <Router>
             <Routes>
+              
+              {/* New User path */}
               <Route path="/" element={<Welcomepage />} />
+              
               {/* Signup paths */}
               <Route path="/signup" element={<Email />} />
               <Route path="/signupVerification" element={<PinUp />} />
               <Route path="/signupSuccess" element={<Success />} />
               <Route path="/signupDetails" element={<Name />} />
-              <Route path="/stocks" element={<HomePStockList />} />
+              
+              {/* Signin paths */}
               <Route path="/signin" element={<Signin />} />
               <Route path="/signinverification" element={<PinIn />} />
+
+              {/* Navbar paths */}
+              <Route path="/stocks" element={<HomePStockList />} />
               <Route path="/spotify" element={<Stockpage />} />
               <Route path="/discover" element={<Discover />} />
               <Route path="/account" element={<Accounts />} />
               <Route path="/test" element={<Yahoodataid />} />
+              
             </Routes>
           </Router>
         </div>}

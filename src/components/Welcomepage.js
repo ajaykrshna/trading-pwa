@@ -1,6 +1,4 @@
 import { useNavigate } from "react-router-dom"
-import Signin from "./Signin/Signin"
-import Email from "./Signup/Email"
 
 export default function Welcomepage() {
     const navigate = useNavigate()
@@ -18,10 +16,3 @@ export default function Welcomepage() {
         </div>
     )
 }
-
-/* const handleSignIn = () => {
-    navigate(<Signin />)
-}
-const handleSignUp = () => {
-    navigate(<Email />)
-} */
