@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom"
 import Stockcard from "./Stockcard"
 
-export default function Wishlist() {
+export default function Mystocks() {
     const navigate = useNavigate()
     return (
         <div className="wishlist">
@@ -10,12 +10,9 @@ export default function Wishlist() {
                     <div onClick={() => navigate(-1)}>
                         <ion-icon name="arrow-back-outline" id='arrow-back-outline-signup'></ion-icon>
                     </div>
-                    <h2>My Wishlist</h2>
+                    <h2>My Stocks</h2>
                 </div>
-                <div className="wishlist--head--icons">
-                    <ion-icon name="search-outline" id='search-outline-wishlist'></ion-icon>
-                    <ion-icon name="add-outline" id="add-outline"></ion-icon>
-                </div>
+                <ion-icon name="search-outline" id='search-outline-wishlist'></ion-icon>
             </div>
             <div className="wishlist--stocks">
                 <div className="wishlist--stocks--head">

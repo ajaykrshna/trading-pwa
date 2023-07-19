@@ -1054,7 +1054,18 @@ body {
     color: #000;
   }
 
-  .wishlist--stocks--head p{
+  #add-outline {
+    color: #000;
+    font-size: 1.8rem;
+  }
+
+  .wishlist--head--icons {
+    display: flex;
+    align-items: center;   
+    gap: 10px;
+  }
+
+  .wishlist--stocks--head p {
     font-size: 1rem;
     font-weight: 700;
     margin: 0;

@@ -15,6 +15,7 @@ import Success from "./components/Signup/Success";
 import Signin from "./components/Signin/Signin";
 import Notification from "./components/Notification";
 import Wishlist from "./components/Wishlist";
+import Mystocks from "./components/Mystocks";
 
 function App() {
 
@@ -66,6 +67,7 @@ function App() {
               {/* General */}
               <Route path="/notifications" element={<Notification />} />
               <Route path="/wishlist" element={<Wishlist />} />
+              <Route path="/mystocks" element={<Mystocks />} />
             </Routes>
           </Router>
         </div>}
