@@ -1,4 +1,13 @@
+import { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
+
 export default function Success() {
+    const navigate = useNavigate()
+    useEffect(() => {
+        setTimeout(() => {
+            navigate('/stocks')
+        }, 5000)
+    }, [])
     return (
         <div className="signup--success">
             <h1>Successful!</h1>
