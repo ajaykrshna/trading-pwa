@@ -51,7 +51,7 @@ const Buysell = () => {
     const navigate = useNavigate()
     return (
         <div className="stockchart--buysell">
-            <button className="stockchart--sell">Sell</button>
+            <button className="stockchart--sell" onClick={() => navigate('/sell')}>Sell</button>
             <button className="stockchart--buy" onClick={() => navigate('/buy')}>Buy</button>
         </div>
     )

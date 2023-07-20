@@ -16,8 +16,10 @@ import Signin from "./components/Signin/Signin";
 import Notification from "./components/Notification";
 import Wishlist from "./components/Wishlist";
 import Mystocks from "./components/Mystocks";
-import Buy from "./components/Buy";
-import Preview from "./components/Preview";
+import Buy from "./components/BuySell/Buy";
+import BuyPreview from "./components/BuySell/BuyPreview";
+import Sell from "./components/BuySell/Sell";
+import SellPreview from "./components/BuySell/SellPreview";
 
 function App() {
 
@@ -70,8 +72,13 @@ function App() {
               <Route path="/notifications" element={<Notification />} />
               <Route path="/wishlist" element={<Wishlist />} />
               <Route path="/mystocks" element={<Mystocks />} />
+
+              {/* Buy Stock */}
               <Route path="/buy" element={<Buy />} />
-              <Route path="/buy/preview" element={<Preview />} />
+              <Route path="/buy/preview" element={<BuyPreview />} />
+              {/* Sell Stock */}
+              <Route path="/sell" element={<Sell />} />
+              <Route path="/sell/preview" element={<SellPreview />} />
             </Routes>
           </Router>
         </div>}

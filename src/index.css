@@ -1146,7 +1146,7 @@ body {
   }
 
   .buy--input {
-    margin-top:3vh;
+    margin-top: 3vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1178,6 +1178,12 @@ body {
     font-weight: 500;
   }
 
+  .buy--warning {
+    color: #eb5168;
+    margin: 0;
+    margin-bottom: -10px;
+  }
+
   .buy--button button {
     width: 100%;
     height: 55px;
@@ -1191,4 +1197,76 @@ body {
     box-shadow: 4px 8px 24px 0px rgba(18, 209, 142, 0.25);
   }
 
+  /* Preview */
+  .preview {
+    padding: 4vh 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .preview--wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .preview--head {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .preview--head h2 {
+    margin: 0;
+    margin-top: -3px;
+  }
+
+  .preview--details {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 4vw;
+    border: 0.5px solid #efefef;
+    border-radius: 20px;
+    background-color: #fafafa;
+  }
+
+  .preview--details--market {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #efefef;
+  }
+
+  .preview--details--market--price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .preview--details--market--price p {
+    font-weight: 600;
+    color: #606060;
+    margin: 0;
+  }
+
+  .preview--details--market--price h2 {
+    font-size: 1.1rem;
+  }
+
+  .preview--details--total {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .preview--details--total p {
+    font-weight: 600;
+    color: #606060;
+  }
+
+  .preview--details--total h2 {
+    font-size: 1.1rem;
+    color: #12d18e;
+  }
 }
