@@ -17,6 +17,7 @@ import Notification from "./components/Notification";
 import Wishlist from "./components/Wishlist";
 import Mystocks from "./components/Mystocks";
 import Buy from "./components/Buy";
+import Preview from "./components/Preview";
 
 function App() {
 
@@ -70,6 +71,7 @@ function App() {
               <Route path="/wishlist" element={<Wishlist />} />
               <Route path="/mystocks" element={<Mystocks />} />
               <Route path="/buy" element={<Buy />} />
+              <Route path="/buy/preview" element={<Preview />} />
             </Routes>
           </Router>
         </div>}
