@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/trading-pwa/static/css/main.66f6ab54.css",
-    "main.js": "/trading-pwa/static/js/main.2dfbc3d8.js",
+    "main.css": "/trading-pwa/static/css/main.2407b27f.css",
+    "main.js": "/trading-pwa/static/js/main.d88035c6.js",
     "static/js/787.fae29ec8.chunk.js": "/trading-pwa/static/js/787.fae29ec8.chunk.js",
+    "static/media/popper.webp": "/trading-pwa/static/media/popper.10b910bc35fe1ce7a876.webp",
     "static/media/Spotifylogo.png": "/trading-pwa/static/media/Spotifylogo.aaf47d06a247b873d6fb.png",
     "index.html": "/trading-pwa/index.html",
-    "main.66f6ab54.css.map": "/trading-pwa/static/css/main.66f6ab54.css.map",
-    "main.2dfbc3d8.js.map": "/trading-pwa/static/js/main.2dfbc3d8.js.map",
+    "main.2407b27f.css.map": "/trading-pwa/static/css/main.2407b27f.css.map",
+    "main.d88035c6.js.map": "/trading-pwa/static/js/main.d88035c6.js.map",
     "787.fae29ec8.chunk.js.map": "/trading-pwa/static/js/787.fae29ec8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66f6ab54.css",
-    "static/js/main.2dfbc3d8.js"
+    "static/css/main.2407b27f.css",
+    "static/js/main.d88035c6.js"
   ]
 }
