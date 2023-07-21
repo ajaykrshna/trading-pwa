@@ -40,6 +40,7 @@ export default function Sell() {
                         }}
                         style={price ? price === 0 ? { borderColor: "#eb5168" } : { borderColor: "#12d18e" } : { borderColor: "#000" }}
                     />
+                    {warning}
                     <p>Balance equity/stock available : INR 55,555.00</p>
                 </div>
             </div>

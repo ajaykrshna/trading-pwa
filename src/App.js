@@ -20,6 +20,8 @@ import Buy from "./components/BuySell/Buy";
 import BuyPreview from "./components/BuySell/BuyPreview";
 import Sell from "./components/BuySell/Sell";
 import SellPreview from "./components/BuySell/SellPreview";
+import BuySuccess from "./components/BuySell/BuySuccess";
+import SellSuccess from "./components/BuySell/SellSuccess";
 
 function App() {
 
@@ -76,9 +78,11 @@ function App() {
               {/* Buy Stock */}
               <Route path="/buy" element={<Buy />} />
               <Route path="/buy/preview" element={<BuyPreview />} />
+              <Route path="/buy/success" element={<BuySuccess />} />
               {/* Sell Stock */}
               <Route path="/sell" element={<Sell />} />
               <Route path="/sell/preview" element={<SellPreview />} />
+              <Route path="/sell/success" element={<SellSuccess />} />
             </Routes>
           </Router>
         </div>}

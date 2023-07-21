@@ -117,7 +117,7 @@ body {
   .homepage--head {
     display: flex;
     flex-direction: column;
-    background: #12d18e;
+    background: #1ed760;
     color: #fff;
     padding: 3vh 5vw;
   }
@@ -1268,5 +1268,73 @@ body {
   .preview--details--total h2 {
     font-size: 1.1rem;
     color: #12d18e;
+  }
+
+  .buysuccess {
+    padding: 4vh 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .buysuccess img {
+    width: 85%;
+  }
+
+  .buysuccess--head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3vh;
+    border-bottom: 1px solid #efefef;
+  }
+
+  .buysuccess--head h3 {
+    margin: 0;
+    color: #9e9e9e;
+  }
+
+  .buysuccess--body {
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .buysuccess--body h2 {
+    font-size: 2.5rem;
+    color: #12d18e;
+  }
+
+  .buysuccess--body h3 {
+    margin: 0;
+    margin-top: -13px;
+    font-size: 1.3rem;
+  }
+
+  .buysuccess--body p {
+    color: #9e9e9e;
+    margin-top: 10px;
+  }
+
+  .buysuccess--buttons {
+    width: 100%;
+  }
+
+  .buysuccess--buttons button {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: #12d18e;
+    color: #fff;
+    box-shadow: 4px 8px 24px 0px rgba(18, 209, 142, 0.25);
   }
 }

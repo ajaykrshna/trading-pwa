@@ -7,7 +7,7 @@ function Stockpage() {
     return (
         <>
             <div className="navbar">
-                <div onClick={() => navigate(-1)}>
+                <div onClick={() => navigate('/stocks')}>
                     <ion-icon name="arrow-back-outline" id='arrow-back-outline'></ion-icon>
                 </div>
                 <div className="navbar--iconwrap">
