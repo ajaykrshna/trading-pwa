@@ -38,14 +38,14 @@ export default function Buy() {
                             setPrice(e.target.value);
                             setWarning(null)
                         }}
-                        style={price ? price == 0 ? { borderColor: "#eb5168" } : { borderColor: "#12d18e" } : { borderColor: "#000" }}
+                        style={price ? price == 0 ? { borderColor: "#eb5168" }  : { borderColor: "#12d18e" } : { borderColor: "#000" }}
                     />
                     {warning}
                     <p>Balance Available : INR 55,555.00</p>
                 </div>
             </div>
             <div className="buy--button">
-                <button onClick={() => price ? price!== 0 ? navigate("/buy/preview") : setWarning(warningMessage) : setWarning(warningMessage)}>Continue</button>
+                <button onClick={() => price ? price!= 0 ? navigate("/buy/preview") : setWarning(warningMessage) : setWarning(warningMessage)}>Continue</button>
             </div>
         </div>
     )
